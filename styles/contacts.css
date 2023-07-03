@@ -1,0 +1,160 @@
+﻿.pageSize {
+    height: 200vh;
+    width: 100%;
+}
+
+.titleTxt {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: bold;
+    margin-left: 530px;
+    color: white;
+}
+
+.infoTxt {
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    margin-left: 540px;
+}
+
+.nameTxt {
+    font-size: 12px;
+    color: white;
+    margin-left: 650px;
+}
+
+.fields {
+    border: none;
+    width: 25%;
+    font-size: 14px;
+    padding: 12px;
+    margin-left: 600px;
+    margin-top: 20px;
+    background-color: lightgray;
+}
+
+    .fields:hover {
+        border: groove;
+        border-color: lightgray;
+    }
+
+
+.btnSent {
+    border: #000000;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.6;
+    cursor: pointer;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 670px;
+}
+
+    .btnSent:hover {
+        opacity: 1
+    }
+
+.btnSent1 {
+    background-color: darkslategray;
+}
+
+.border {
+    display: block;
+    border: solid;
+    color: gray;
+    background-color: dimgrey;
+}
+
+.borderBox1 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 130px;
+    width: 330px;
+    height: 300px;
+    border-width: thick;
+    border: solid;
+    color: gray;
+    background-color: none;
+}
+
+.borderBox2 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 590px;
+    width: 330px;
+    height: 300px;
+    border-width: thick;
+    border: solid;
+    color: gray;
+    background-color: none;
+}
+
+.borderBox3 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 1050px;
+    width: 330px;
+    height: 300px;
+    border-width: thick;
+    border: solid;
+    color: gray;
+    background-color: none;
+}
+
+.text1Box1 {
+    padding: 40px 80px 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text2Box1 {
+    padding: 10px 40px 40px 30px;
+    color: darkslategray;
+    font-size: 16px;
+}
+
+.text1Box2 {
+    margin-left: 100px;
+    margin-top: 45px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text2Box2 {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: darkslategray;
+    font-size: 16px;
+}
+
+.btnContact {
+    border: #000000;
+    color: white;
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.6;
+    cursor: pointer;
+    position: relative;
+}
+
+    .btnContact:hover {
+        opacity: 1
+    }
+
+.btnContact1 {
+    background-color: black;
+}

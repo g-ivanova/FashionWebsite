@@ -1,0 +1,66 @@
+﻿.buttonReg {
+    position: relative;
+    border: #000000;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.6;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 70px;
+    margin-left: 250px;
+}
+
+    .buttonReg:hover {
+        opacity: 1
+    }
+
+.btnReg {
+    background-color: black;
+}
+
+.emailFieldNewsletter {
+    width: 70%;
+    padding: 12px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: lightgray;
+    position: center;
+}
+
+    .emailFieldNewsletter:hover {
+        border: groove;
+        border-color: lightgray;
+    }
+
+.txtInfo1 {
+    margin-top: 70px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+.txtInfo2 {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+.borderNewsletter {
+    position: relative;
+    border: none;
+    
+    height: 250px;
+    width: 650px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+    .borderNewsletter:hover {
+        opacity: 1;
+        background-color: #E1DCDC;
+    }

@@ -1,0 +1,41 @@
+﻿/* Filter By Color */
+.shop-filter__color {
+    display: inline-block;
+    margin: 0 2px 2px 0;
+}
+
+.item{
+    width: 18em;
+}
+
+/* Image animation */
+.image{
+    transition: all 1s ease-out;
+    transition-duration: 1s
+}
+.image:hover{
+    transform: scale(1.2, 1.2);
+    cursor: pointer
+}
+
+/* Wishlist */
+.wishlist {
+    color: white;
+    display: none;
+    text-align: center;
+    border: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    display: block;
+    font-size: 14px;
+}
+
+
+
+
+
+
+

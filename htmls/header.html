@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link href="/styles/index.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/styles/loginForm.css" rel="stylesheet" />
+    <link href="/styles/heartForm.css" rel="stylesheet" />
+    <link href="/styles/shopingCartForm.css" rel="stylesheet" />
+
+</head>
+<body style="padding-top:0 !important">
+    <script>
+        function showTextField() {
+            var x = document.getElementById("search-field");
+            if (x.style.visibility === "hidden") {
+                x.style.visibility = "visible";
+            } else {
+                x.style.visibility = "hidden";
+            }
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="/index.aspx">
+                <img src="/images/log.jpeg" style="width:250px; height:40px; position: absolute; left: 50%; margin-left: -120px !important; display:block; top:10px; padding-bottom: 0px !important" />
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Търси" id="search-field" style="visibility:hidden" />
+                        <button id="search-button" type="button" class="btn btn-light" onclick="showTextField()">
+                            <i class="fa fa-search fa-lg"></i>
+                        </button>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="input-group rounded">
+                        <button class="btn btn-light" onclick="document.getElementById('idUser').style.display='block'" style="width:auto;">
+                            <i class="fa fa-user fa-lg" style="color:black"></i>
+                        </button>
+
+                        <div id="idUser" class="modal">
+                            <form class="modal-content">
+                                <div style="margin-left: 45%; margin-top: 20px;">
+                                    <span onclick="document.getElementById('idUser').style.display='none'" class="close">&times;</span>
+                                    <i class="fa fa-user-circle-o fa-4x"></i>
+                                </div>
+
+                                <div class="container">
+                                    <div class="textF"><label for="uname">Потребителско име</label><br /></div>
+                                    <input class="fieldsUser" type="text" placeholder="Въведи потребителско име" name="uname" required /><br />
+
+                                    <div class="textF"><label for="psw"><b>Парола</b></label><br /></div>
+                                    <input class="fieldsUser" type="password" placeholder="Въведи парола" name="psw" required />
+
+                                    <button class="buttonLogin" type="submit">Вход</button><br />
+                                    <label>
+                                        <br /><input type="checkbox" checked="checked" name="remember"> Запомни ме
+                                    </label><br />
+                                </div>
+
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <span class="psw">Забравена <a href="#">парола?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="input-group rounded">
+                        <button class="btn btn-light" onclick="document.getElementById('idHeart').style.display='block'" style="width:auto;">
+                            <i class="fa  fa-heart fa-lg" style="color:black"></i>
+                        </button>
+                        <div id="idHeart" class="modal">
+                            <form class="modal-content" method="post">
+                                <div>
+                                    <span onclick="document.getElementById('idHeart').style.display='none'" class="close">&times;</span>
+                                </div>
+
+                                <div class="container">
+                                    <i class="fa fa-frown-o fa-3x" style=" margin-top:20px; margin-left: 45%;"></i>
+                                    <div class="textH">
+                                        <p>Все още нямаш добавени продукти в любими.</p>
+                                        <p>За да добавиш стоки към любими първо влез <br />със своя акаунт.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <div class="input-group rounded">
+                        <button class="btn btn-light" onclick="document.getElementById('idShoping').style.display='block'" style="width:auto; border: none;">
+                            <i class="fa fa-shopping-cart fa-lg" style="color:black"></i>
+                        </button>
+                        <div id="idShoping" class="modal">
+                            <form class="modal-content" method="post">
+                                <div>
+                                    <span onclick="document.getElementById('idShoping').style.display='none'" class="close">&times;</span>
+                                </div>
+
+                                <div class="container">
+                                    <i class="fa fa-frown-o fa-3x" style=" margin-top:20px; margin-left: 45%;"></i>
+                                    <div class="textSh">
+                                        <p>Все още нямаш добавени продукти в кошница.</p>
+                                        <p>За да добавиш стоки към кошницата първо влез <br />със своя акаунт.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        var modal1 = document.getElementById('idUser');
+        var modal2 = document.getElementById('idHeart');
+        var modal3 = document.getElementById('idShoping');
+
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+    </script>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a id="jackets" type="button" class="btn btn-light" href="/items/jackets/jackets.aspx">Якета</a>
+                <li><a id="coats" type="button" class="btn btn-light" href="/items/coats/coats.aspx">Палта</a>
+                <li><a id="jeans" type="button" class="btn btn-light" href="/items/jeans/jeans.aspx">Дънки</a>
+                <li><a id="dresses" type="button" class="btn btn-light" href="/items/dresses/dresses.aspx">Рокли</a>
+                <li><a id="shirts" type="button" class="btn btn-light" href="/items/shirts/shirts.aspx">Тениски</a>
+                <li><a id="shirts" type="button" class="btn btn-light" href="/items/blouses/blouses.aspx">Блузи</a>
+                <li><a id="shirts" type="button" class="btn btn-light" href="/items/new/new.aspx" style="color:#666666">НОВО</a>
+                <li><a id="shirts" type="button" class="btn btn-light" href="/items/promotions/promotions.aspx" style="color:red">ПРОМОЦИИ</a>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <span class="text-white">
+            <i class="fa fa-wpforms"></i> Наложен платеж
+        </span>
+        <span class="text-white">
+            <i class="fa fa-check"></i> Преглед и тест
+        </span>
+        <span class="text-white">
+            <i class="fa fa-shopping-cart"></i> Безплатна замяна и връщане
+        </span>
+        <span class="text-white">
+            <i class="fa fa-refresh"></i> 100 дни право на връщане
+        </span>
+    </nav>
+</body>
+</html>
